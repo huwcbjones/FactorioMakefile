@@ -35,6 +35,7 @@ package: dist/$(MOD_ZIP)
 
 dist/$(MOD_ZIP): $(shell tree -if --noreport src)
 	mkdir -p dist
+	if [ -d ".git" ]; then grep -q -F '**/dist/*' .gitignore || echo '**/dist/*' >> .gitignore; fi
 	cp -R src $(DIRECTORY)
 	cp LICENSE *.md $(DIRECTORY) 2>/dev/null
 	zip -r $(MOD_ZIP) $(DIRECTORY)
