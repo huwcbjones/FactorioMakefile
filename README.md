@@ -15,6 +15,7 @@ Your mod should now be packaged in `/dist`
 - `make clean`: Cleans output and temporary files
 - `make install`: Attempts to install the mod into your Factorio mods directory.
 - `make remove`: Removes all traces of your mod in your Factorio mods directory. (Useful if you have changed versions and want to test a different version).
+- The Makefile automatically adds a `.gitignore` exception for the `/dist` directory.
 
 ## Notes ##
 This Makefile uses `info.json` to get your mod name/version, so no extra files are needed!
