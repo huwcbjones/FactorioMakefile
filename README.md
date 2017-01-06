@@ -17,6 +17,5 @@ Your mod should now be packaged in `/dist`
 - `make remove`: Removes all traces of your mod in your Factorio mods directory. (Useful if you have changed versions and want to test a different version).
 
 ## Notes ##
-This Makefile uses `info.json` to get your mod name/version, so now extra files are needed!
-
+This Makefile uses `info.json` to get your mod name/version, so no extra files are needed!
 It also copies in `LICENSE` (if exists) and any markdown (`*.md`) files too.
